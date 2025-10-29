@@ -202,7 +202,7 @@ article p {
 
 <body>
   <header>
-    <!-- added tabindexes to any important elements such as headers and links-->
+    <!-- added tabindexes to any interactive elements such as links and input fields-->
     <div class="container">
       <h1 class="logo">The Funion</h1>
       
@@ -210,6 +210,7 @@ article p {
       <nav class="menu">
         <a href="#" tabindex="0">Home</a>
         <a href="#" tabindex="0">Politics</a>
+        <!-- changed tabindex -1 to 0 for Business -->
         <a href="#" tabindex="0">Business</a>
         <a href="#" tabindex="0">Entertainment</a>
         <a href="#" tabindex="0">Sports</a>
@@ -236,6 +237,7 @@ article p {
     <div class="side-by-side">
       <div class="column">
         <div class="tier-header">
+          <!-- removed tabindex 0 from non interactive element -->
           <h2>In the news</h2>
         </div>
         <article>
@@ -289,7 +291,8 @@ article p {
       <div class="container">
         <h3>Like the Funion? Consider joining our newsletter!</h3>
         <input type="text" tabindex="0">
-        <!-- changed button from onfocus to onclick-->
+        <!-- changed button from onfocus to onclick -->
+         <!-- changed tabindex 1 to 0 to allow for more coherent focus order -->
         <button type="button" onclick="getFocus()" tabindex="0">Sign up</button></div>
         
       </div>
